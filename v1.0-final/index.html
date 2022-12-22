@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Let's Talk About Death</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- beginning of container dropdown -->
+      <div id="title_div" class="title_svg">
+        <svg id="title_svg"></svg>
+        <h1 id="title" class="text-center">Let's Talk About Death</h1>
+        <h2 id="subtitle" class="text-center">Written by Sihyeon Kim, Andrew Seo, Alex Yuwen</h2>
+      </div>
+
+      <h4 id="lineTitle">Death Rates for Top Causes of Death since 1900</h4>
+      <svg id="linechart_svg"></svg>
+
+      <div id="bar_div" class="border border-dark">
+        <h4 id="barTitle">Life Expectancy at Birth</h4>
+        <svg id="bar_svg"></svg>
+      </div>
+
+      <div id="pie_div" class="border border-dark rounded bg-light shadow-sm">
+        <h4 id="pieTitle">Top Five Leading Causes of Death in 1900 America</h4>
+        <svg id="pie_svg"></svg>
+      </div>
+
+      <h4 id="bubbleTitle">Leading Causes of Death in the U.S. in 2016</h4>
+      <svg id="bubblechart_svg"></svg>
+
+      <div id="heat_div" class="border border-dark">
+        <h4 id="heatTitle">Leading Causes of Death in the U.S.</h4>
+        <svg id="heat_svg"></svg>
+      </div>
+
+      <div id="inn_div" class="border border-dark">
+        <h4 id="innTitle">Innovative Visualization Design</h4>
+        <svg id="inn_svg"></svg>
+        <svg id="tempsvg" class="tempsvg">
+          <rect id="tank" x="33" y="145" width="16" height="500" style="fill:rgb(133, 199, 238);stroke-width:3;" />
+          <rect id="tank" x="949" y="145" width="16" height="500" style="fill:rgb(133, 199, 238);stroke-width:3;" />
+          <rect id="tank" x="33" y="638" width="932" height="16" style="fill:rgba(133, 199, 238);stroke-width:3;" />
+          <text id='altitude' x="33" y="195" font-weight="bold" style="fill:rgb(19, 59, 82);">20</text>
+          <text id='altitude' x="33" y="290" font-weight="bold" style="fill:rgb(19, 59, 82);">16</text>
+          <text id='altitude' x="33" y="380" font-weight="bold" style="fill:rgb(19, 59, 82);">12</text>
+          <text id='altitude' x="37" y="460" font-weight="bold" style="fill:rgb(19, 59, 82);">8</text>
+          <text id='altitude' x="37" y="560" font-weight="bold" style="fill:rgb(19, 59, 82);">4</text>
+          <text id='options' x="550" y="30" font-weight="bold" style="fill:rgb(19, 59, 82);">Select Disease: </text>
+          <text id='options' x="850" y="30" font-weight="bold" style="fill:rgb(19, 59, 82);">Year: </text>
+        </svg>
+        <svg id="wave_svg" class="Wave" viewBox="0 0 12960 1120">
+    
+          <path d="M9720,320C8100,320,8100,0,6480,0S4860,320,3240,320,1620,0,0,0V1120H12960V0C11340,0,11340,320,9720,320Z">
+            
+              <animate
+                  dur="5s"
+                  repeatCount="indefinite"
+                  attributeName="d"
+                  values="
+                    M9720,320C8100,320,8100,0,6480,0S4860,320,3240,320,1620,0,0,0V1120H12960V0C11340,0,11340,320,9720,320Z;
+                    M9720,0C8100,0,8100,319,6480,319S4860,0,3240,0,1620,320,0,320v800H12960V320C11340,320,11340,0,9720,0Z;
+                    M9720,320C8100,320,8100,0,6480,0S4860,320,3240,320,1620,0,0,0V1120H12960V0C11340,0,11340,320,9720,320Z
+                  "/>
+            
+          </path>
+          
+        </svg>
+        <h2><div class="dropdown"> <!-- beginning of the attributes dropdown -->
+          <select class="btn btn-default dropdown-toggle" type="button" id="attributes" required onchange = 'innovative(); called();' 
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Select Causes:
+          <option value="Alzheimer's disease">Alzheimer's disease</option>
+          <option value="Cancer">Cancer</option>
+          <option value="CLRD">CLRD</option>
+          <option value="Diabetes">Diabetes</option>
+          <option value="Heart disease">Heart disease</option>
+          <option value="Influenza and pneumonia">Influenza and pneumonia</option>
+          <option value="Kidney disease">Kidney disease</option>
+          <option value="Stroke">Stroke</option>
+          <option value="Suicide">Suicide</option>
+          <option value="Unintentional injuries">Unintentional injuries</option>
+          </select>
+        </div></h2> <!-- end of the attributes dropdown -->
+      <h2><div class="dropdown"> <!-- beginning of the years dropdown -->
+        <select class="btn btn-default dropdown-toggle" type="button" id="years" required onchange = 'innovative(); called();' 
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Year:
+        <option value="1999">1999</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+        <option value="2004">2004</option>
+        <option value="2005">2005</option>
+        <option value="2006">2006</option>
+        <option value="2007">2007</option>
+        <option value="2008">2008</option>
+        <option value="2009">2009</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        </select>
+      </div></h2> <!-- end of the years dropdown -->
+      </div>
+    </div>
+  </body>
+</html>

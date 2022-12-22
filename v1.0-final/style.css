@@ -1,0 +1,168 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(30, 29, 31);
+}
+
+.title_svg {
+  width: 1360px;
+  height: 800px;
+  position:relative;
+  top: -10px;
+  left: -10px;
+  background-image: url('image/title.jpg');
+}
+
+#title {
+  color: white;
+  font-size: 50px;
+  position: relative;
+  left: 430px;
+}
+
+#subtitle {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  left: 460px;
+}
+
+#lineTitle {
+  color: white;
+  font-size: 25px;
+  position: relative;
+  left: 420px;
+  top: 0px;
+}
+#linechart_svg {
+  width: 1300px;
+  height: 800px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  position: relative;
+  left: 15px;
+  top: 50px;
+}
+
+#barTitle {
+  color: white;
+  font-size: 25px;
+  position: relative;
+  left: 550px;
+  top: 100px;
+}
+#bar_svg {
+  width: 1300px;
+  height: 800px;
+  background-color: white;
+  position: relative;
+  left: 15px;
+  top: 150px;
+}
+
+#pieTitle {
+  color: white;
+  font-size: 25px;
+  position: relative;
+  left: 400px;
+  top: 200px;
+}
+#pie_svg {
+  width: 580px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  position:relative;
+  left: 380px;
+  top:250px;
+}
+
+#bubbleTitle{
+  color: white;
+  font-size: 25px;
+  position: relative;
+  left: 430px;
+  top: 300px;
+}
+#bubblechart_svg {
+  width: 700px;
+  height: 700px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  position: relative;
+  left: 310px;
+  top: 360px;
+}
+
+#heatTitle {
+  color: white;
+  font-size: 25px;
+  position: relative;
+  left: 470px;
+  top: 410px;
+}
+#heat_svg {
+  width: 1030px;
+  height: 600px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  position:relative;
+  left: 150px;
+  top: 470px;
+}
+
+#innTitle{
+  color: white;
+  font-size: 25px;
+  position: relative;
+  left: 500px;
+  top: 520px;
+}
+#inn_svg {
+  width: 1000px;
+  height: 700px;
+  background-color: white;
+  background-image: url('image/faucet.jpg');
+  border: 1px solid pink;
+  position: relative;
+  left: 170px;
+  top: 570px;
+}
+
+.tempsvg {
+  background-color: rgba(229, 69, 162, 0.014);
+  width: 1000px;
+  height: 700px;
+  position: absolute;
+  left: 180px; /*59px*/
+  top: 5280px;
+}
+
+.Wave {
+  width: 900px;
+  position: absolute;
+  left: 229px;
+  top: 5260px;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  fill: rgb(229,29,29); 
+}
+
+#attributes {
+  position: absolute;
+  left: 840px;
+  top: 5296px;
+}
+
+#years {
+  position: absolute;
+  left: 1075px;
+  top: 5296px;
+}
